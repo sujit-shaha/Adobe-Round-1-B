@@ -1,4 +1,3 @@
-# app/pdf_parser.py
 import fitz
 from typing import List, Dict
 
@@ -24,9 +23,6 @@ def parse_pdf_pages(file_path: str) -> List[Dict]:
     return sections
 
 def chunk_section(section: Dict, chunk_size: int, overlap: int) -> List[Dict]:
-    """
-    Split long section content into overlapping chunks.
-    """
     if chunk_size <= 0:
         return [section]
     text = section["content"]

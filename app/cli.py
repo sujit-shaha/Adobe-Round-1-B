@@ -1,4 +1,3 @@
-# app/cli.py
 import argparse
 
 def build_parser():

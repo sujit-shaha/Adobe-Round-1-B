@@ -36,16 +36,12 @@ class ModelTrainer:
             }
             
     def add_example(self, prompt, output, quality_score=None):
-        """Add a new training example"""
-        # Create a hash for deduplication
         example_hash = hashlib.md5((prompt + output).encode()).hexdigest()
         
-        # Check if we already have this example
         for ex in self.examples:
             if ex.get("hash") == example_hash:
-                return False  # Already exists
+                return False
                 
-        # Add the new example
         self.examples.append({
             "hash": example_hash,
             "prompt": prompt,
@@ -54,45 +50,37 @@ class ModelTrainer:
             "added_at": datetime.now().isoformat()
         })
         
-        # Save examples to disk
         with open(self.examples_file, 'w') as f:
             json.dump(self.examples, f)
             
         return True
         
     def fine_tune_model(self, base_model_name, epochs=1):
-        """Fine-tune the model with collected examples (intended to run offline)"""
-        if not self.examples or len(self.examples) < 5:  # Need minimum examples
+        if not self.examples or len(self.examples) < 5:
             return False
             
         print(f"Fine-tuning model with {len(self.examples)} examples")
         
-        # Setup for LoRA fine-tuning (lightweight adapter)
         tokenizer = AutoTokenizer.from_pretrained(base_model_name)
         model = AutoModelForSeq2SeqLM.from_pretrained(base_model_name)
         
-        # Define LoRA config - lightweight fine-tuning
         peft_config = LoraConfig(
             task_type=TaskType.SEQ_2_SEQ_LM,
             inference_mode=False,
-            r=8,  # Low rank
+            r=8,
             lora_alpha=32,
             lora_dropout=0.1,
-            target_modules=["q", "v"]  # Target specific modules
+            target_modules=["q", "v"]
         )
         
-        # Apply LoRA adapters
         model = get_peft_model(model, peft_config)
         
-        # Format examples for training
         train_data = []
         for ex in self.examples:
             train_data.append({
                 "input": ex["prompt"],
                 "output": ex["output"]
             })
-            
-        # Save adapter weights with version number
         version = self.metadata["version"] + 1
         adapter_path = os.path.join(self.adapter_path, f"v{version}")
         model.save_pretrained(adapter_path)
