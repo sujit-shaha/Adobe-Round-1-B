@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "input_documents": [
+      "D:\\Adobe\\persona_doc_intelligence\\docs\\2024-cisco-full-annual-report.pdf",
+      "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "D:\\Adobe\\persona_doc_intelligence\\docs\\TCS annual report.pdf"
+    ],
+    "persona": "Investment Analyst",
+    "job_to_be_done": "Analyze revenue trends, R&D investments, and market positioning strategies",
+    "processing_timestamp": "2025-07-26T19:39:28.048308"
+  },
+  "extracted_sections": [
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 121,
+      "section_title": "Page 121",
+      "importance_rank": 1
+    },
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 62,
+      "section_title": "Page 62",
+      "importance_rank": 2
+    },
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 27,
+      "section_title": "Page 27",
+      "importance_rank": 3
+    },
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 39,
+      "section_title": "Page 39",
+      "importance_rank": 4
+    },
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 58,
+      "section_title": "Page 58",
+      "importance_rank": 5
+    }
+  ],
+  "per_document_analysis": {
+    "accenture-fiscal-2024-annual-report.pdf": [
+      {
+        "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+        "page": 27,
+        "section_title": "Page 27",
+        "refined_text": "Business 7 Industry Groups"
+      },
+      {
+        "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+        "page": 121,
+        "section_title": "Page 121",
+        "refined_text": "(Truncated)"
+      },
+      {
+        "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+        "page": 62,
+        "section_title": "Page 62",
+        "refined_text": "The following revenues comm...(truncated)"
+      },
+      {
+        "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+        "page": 39,
+        "section_title": "Page 39",
+        "refined_text": "Identify the risks of technological developments. Identify the risks of technological developments. Identify the risks of technological developments."
+      },
+      {
+        "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+        "page": 58,
+        "section_title": "Page 58",
+        "refined_text": "FORM 10-K Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations 38 Revenues Percent Increase (Decrease) Percent Increase (Decrease) Percent Increase (Decrease) Percent Increase (Decrease) Percent of Total Revenues for Fiscal (in billions of U.S. dollars) 2024 2023 2023 Fiscal U.S. Dollars Local Currency Geographic Markets North America (1) $ 30.7 $ 30.3 1 % 2 % 47 % 47 % EMEA (2) 22.8 22.3 2 \u2014"
+      }
+    ]
+  },
+  "sub_section_analysis": [
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 27,
+      "section_title": "Page 27",
+      "refined_text": "Business 7 Industry Groups"
+    },
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 121,
+      "section_title": "Page 121",
+      "refined_text": "(Truncated)"
+    },
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 62,
+      "section_title": "Page 62",
+      "refined_text": "The following revenues comm...(truncated)"
+    },
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 39,
+      "section_title": "Page 39",
+      "refined_text": "Identify the risks of technological developments. Identify the risks of technological developments. Identify the risks of technological developments."
+    },
+    {
+      "document": "D:\\Adobe\\persona_doc_intelligence\\docs\\accenture-fiscal-2024-annual-report.pdf",
+      "page": 58,
+      "section_title": "Page 58",
+      "refined_text": "FORM 10-K Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations 38 Revenues Percent Increase (Decrease) Percent Increase (Decrease) Percent Increase (Decrease) Percent Increase (Decrease) Percent of Total Revenues for Fiscal (in billions of U.S. dollars) 2024 2023 2023 Fiscal U.S. Dollars Local Currency Geographic Markets North America (1) $ 30.7 $ 30.3 1 % 2 % 47 % 47 % EMEA (2) 22.8 22.3 2 \u2014"
+    }
+  ],
+  "consolidated_summary": "Depreciation and amortization (3) 603,927 501,749 337,549 1,443,225 Operating income 4,952,337 2,803,610 1,839,900 9,595,847 Net assets as of August 31 (4) 4,601,175 3,440,180 789,878 8,831,233 Property & equipment, net 518,966 361,267 1,412,073 Operating income 4,473,701 2,483,483 1,852,705 8,809,889 Net assets as of August 31 (4) 4,091,045 2,811,231 722,770 7,625,046 Property & equipment, net 541,"
+}
